@@ -13,14 +13,12 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   hackathon,
   specbits,
   chandigarh,
-  carrent,
-  jobit,
-  tripguide,
+  bookstoreImage,
+  chatAppImage,
+  calculator,
   threejs,
 } from "../assets";
 
@@ -109,8 +107,8 @@ const experiences = [
   {
     title: "MERN Stack Developer",
     company_name: "Hackathon Participant",
-    icon: hackathon, // Add an icon for the hackathon
-    iconBg: "#383E56",
+    icon: hackathon,
+    iconBg: "#E6DEDD",
     date: "2023 - Present",
     points: [
       "Participated in multiple hackathons focusing on MERN stack applications.",
@@ -122,9 +120,9 @@ const experiences = [
   {
     title: "Full-stack Developer Intern",
     company_name: "SpecBits",
-    icon: specbits, // Add a SpecBits-related icon
+    icon: specbits,
     iconBg: "#E6DEDD",
-    date: "2022 - 2023",
+    date: "May 2023 - July 2023",
     points: [
       "Worked as a full-stack intern, developing web applications using the MERN stack.",
       "Collaborated with senior developers on client projects and learned industry-standard best practices.",
@@ -134,8 +132,8 @@ const experiences = [
   },
   {
     title: "BCA Student",
-    company_name: "XYZ University",
-    icon: chandigarh, // Add a university-related icon
+    company_name: "Chandigarh University",
+    icon: chandigarh,
     iconBg: "#E6DEDD",
     date: "2022 - Present",
     points: [
@@ -146,41 +144,32 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const achievements = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    achievement:
+      "Secured 2nd place in a national-level IoT-based hackathon for creating an innovative MERN stack application.",
+    date: "May 2023",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    achievement:
+      "Successfully completed a full-stack internship at SpecBits, developing scalable web applications using the MERN stack.",
+    date: "July 2023",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    achievement:
+      "Developed multiple projects including a fully functional online bookstore and a real-time chat application as part of coursework and internships.",
+    date: "2022 - Present",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Books Online Bookstore",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-fledged online bookstore platform that allows users to browse, search, and purchase books. Features include a shopping cart, payment gateway integration, and an admin panel for managing inventory.",
     tags: [
       {
-        name: "react",
+        name: "mern",
         color: "blue-text-gradient",
       },
       {
@@ -188,55 +177,62 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "react",
         color: "pink-text-gradient",
       },
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: bookstoreImage,
+    source_code_link: "https://github.com/ThkrYogesh/bookStoreApp",
   },
   {
-    name: "Job IT",
+    name: "Chat Application",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A chat application built using the MERN stack, allowing users to send real-time messages. Features include private chat rooms, user authentication, and message storage using MongoDB.",
     tags: [
+      {
+        name: "mern",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: chatAppImage,
+    source_code_link: "https://github.com/ThkrYogesh/Calculator.Js",
   },
   {
-    name: "Trip Guide",
+    name: "Dynamic Calculator",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A basic dynamic functional calculator that performs arithmetic operations like addition, subtraction, multiplication, and division which makes the user to use it with a good. Built using vanilla JavaScript, HTML, and CSS.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "javascript",
+        color: "pink-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "html",
+        color: "red-text-gradient",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: calculator,
+    source_code_link: "https://github.com/your-calculator-app-link",
   },
 ];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, achievements, projects };
